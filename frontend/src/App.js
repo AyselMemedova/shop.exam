@@ -1,20 +1,4 @@
-// import { RouterProvider, createBrowserRouter } from "react-router-dom";
-// import ROUTES from "./routes/routes";
-// import MainContext from "./context/context";
-// import React from "react";
 
-// function App() {
-//   const router = createBrowserRouter(ROUTES);
-
-//   return (
-//     <div className="App">
-//         <RouterProvider router={router} />
-
-//     </div>
-//   );
-// }
-
-// export default App;
 
 import React, { useEffect, useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
