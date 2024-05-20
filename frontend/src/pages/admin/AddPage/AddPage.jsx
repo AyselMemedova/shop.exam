@@ -23,7 +23,7 @@ const AddPage = () => {
       onSubmit: values => {
         alert(JSON.stringify(values, null, 2));
          axios
-        .post("http://localhost:3000/products", {
+        .post("http://localhost:8080/api/mehsullar", {
           id:uuidv4(),
           name:values.name,
           image:values.image,

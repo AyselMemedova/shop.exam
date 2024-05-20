@@ -200,7 +200,7 @@ const Home = () => {
           </div>
         </div> */}
 
-        {<Cardlist data={data}/>}
+        <Cardlist data={data}/>
       </section>
     </div>
   )

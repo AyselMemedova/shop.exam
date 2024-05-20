@@ -7,6 +7,7 @@ import AdminRoot from "../pages/admin/AdminRoot";
 import Dashboard from "../pages/admin/Dashboard/Dashboard";
 import AddPage from "../pages/admin/AddPage/AddPage";
 import Products from "../pages/admin/Products/Products";
+import Detail from "../pages/site/Detail/Detail";
 
 const ROUTES=[{
    path:"/",
@@ -23,6 +24,10 @@ const ROUTES=[{
     {
         path:"about",
         element:<About/>
+    },
+    {
+        path:"details/:_id",
+        element:<Detail/>
     }
    ]
 

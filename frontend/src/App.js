@@ -15,7 +15,7 @@ function App() {
 
   const router = createBrowserRouter(ROUTES);
   useEffect(() => {
-    axios.get("http://localhost:3000/products").then((res) => {
+    axios.get("http://localhost:8080/api/mehsullar").then((res) => {
       setData([...res.data]);
       
     });

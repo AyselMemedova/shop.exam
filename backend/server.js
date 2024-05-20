@@ -7,6 +7,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
+const { Schema } = mongoose;
+
 const mehsulSchema = new Schema({
   title: {
     type: String,
@@ -68,6 +71,7 @@ mongoose
   .connect(process.env.CONNECTION_STRING)
   .then((res) => console.log("db connected"))
   .catch((error) => console.log("db not connected"));
+
 
 app.listen(process.env.PORT, (req, res) => {
   console.log("running api 8080");
